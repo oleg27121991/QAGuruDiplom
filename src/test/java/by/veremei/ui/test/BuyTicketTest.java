@@ -19,6 +19,8 @@ import java.util.concurrent.atomic.AtomicReference;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
+@DisplayName("Билеты на мероприятие")
+@Tag("TICKETS")
 public class BuyTicketTest extends TestBase {
     private String buyerName;
     private String buyerPass;

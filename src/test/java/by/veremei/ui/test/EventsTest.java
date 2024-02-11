@@ -13,6 +13,8 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
+@DisplayName("Мероприятие")
+@Tag("EVENTS")
 public class EventsTest extends TestBase {
     MainPage mainPage = new MainPage();
     EventPage eventPage = new EventPage();

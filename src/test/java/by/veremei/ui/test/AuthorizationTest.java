@@ -14,6 +14,8 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
+@DisplayName("Авторизация")
+@Tag("AUTH")
 public class AuthorizationTest extends TestBase {
     MainPage mainPage = new MainPage();
     TestDataAuthorization authorizationData = new TestDataAuthorization();

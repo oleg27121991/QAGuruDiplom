@@ -16,6 +16,8 @@ import java.util.stream.Stream;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
+@DisplayName("Главная страница")
+@Tag("MAIN")
 public class MainPageTest extends TestBase {
     MainPage mainPage = new MainPage();
 
