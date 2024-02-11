@@ -1,6 +1,7 @@
 package by.veremei.ui.test;
 
 import by.veremei.ui.data.TestDataAuthorization;
+import by.veremei.ui.page.BuyerAccountPage;
 import by.veremei.ui.page.MainPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
@@ -15,6 +16,29 @@ import static io.qameta.allure.Allure.step;
 public class AuthorizationTest extends TestBase {
     MainPage mainPage = new MainPage();
     TestDataAuthorization authorizationData = new TestDataAuthorization();
+    BuyerAccountPage buyerAccountPage = new BuyerAccountPage();
+
+    @Test
+    @Feature("Авторизация покупателя")
+    @Story("Успешная авторизация")
+    @Owner("tg - @Veremeioleg")
+    @Severity(SeverityLevel.BLOCKER)
+    @Tag("AUTH")
+    @DisplayName("Успешная авторизация зарегистрированного покупателя")
+    void testUserValidAuthorization() {
+        step("Открываем главную страницу", () ->
+                mainPage.openMainPage(baseUrl)
+        );
+        step("Открываем форму авторизации покупателя", () ->
+                mainPage.openBuyerLoginForm()
+        );
+        step("Вводим правильные данные зарегистрированного покупателя", () ->
+                mainPage.loginBuyer(authorizationData.buyerEmail, authorizationData.buyerPass)
+        );
+        step("Проверяем что покупатель успешно авторизован в личном кабинете", () ->
+                buyerAccountPage.checkBuyerName(authorizationData.buyerEmail)
+        );
+    }
 
     @Test
     @Feature("Авторизация покупателя")
