@@ -46,11 +46,11 @@ public class MainPageTest extends TestBase {
         return Stream.of(
                 Arguments.of(
                         Language.BY,
-                        List.of("Новы год", "Канцэрты", "Кіно", "Спектаклі", "Бізнес", "ІТ і інтэрнэт", "Спорт", "Для дзяцей", "Вечарынкі", "Фестываль", "Выстава", "Прыгажосць і Здароўе", "Адукацыя і развіццё", "Квэсты і квізы", "Анлайн", "Мастацтва і культура", "Ежа", "Псіхалогія і самапазнанне", "Сертыфікат", "Экскурсіі і падарожжы", "Іншыя падзеі", "Іншыя забавы")
+                        List.of("Канцэрты", "Кіно", "Спектаклі", "Бізнес", "ІТ і інтэрнэт", "Спорт", "Для дзяцей", "Вечарынкі", "Фестываль", "Выстава", "Прыгажосць і Здароўе", "Адукацыя і развіццё", "Квэсты і квізы", "Анлайн", "Мастацтва і культура", "Ежа", "Псіхалогія і самапазнанне", "Сертыфікат", "Экскурсіі і падарожжы", "Іншыя падзеі", "Іншыя забавы")
                 ),
                 Arguments.of(
                         Language.EN,
-                        List.of("New Year", "Concerts", "Cinema", "Performances", "Business", "IT and Internet", "Sports", "For children", "Party", "Festivals", "Exhibition", "Beauty and health", "Education and development", "Quests and quizzes", "On-line", "Art and culture", "Food", "Psychology and self-knowledge", "Certificates", "Tours and travels", "Other events", "Other entertainment")
+                        List.of("Concerts", "Cinema", "Performances", "Business", "IT and Internet", "Sports", "For children", "Party", "Festivals", "Exhibition", "Beauty and health", "Education and development", "Quests and quizzes", "On-line", "Art and culture", "Food", "Psychology and self-knowledge", "Certificates", "Tours and travels", "Other events", "Other entertainment")
                 )
         );
     }

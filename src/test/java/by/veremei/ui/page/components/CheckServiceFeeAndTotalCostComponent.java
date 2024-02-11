@@ -18,7 +18,7 @@ public class CheckServiceFeeAndTotalCostComponent {
 
         double serviceFee = 0.0;
         for (int i = 1; i <= ticketCount; i++) {
-            serviceFee = ticketPrice * 0.0613;
+            serviceFee = ticketPrice * 0.06125;
             if (serviceFee > 5.0) {
                 serviceFee = 5.0;
             } else if (serviceFee < 0.8) {

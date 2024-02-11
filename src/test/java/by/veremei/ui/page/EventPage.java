@@ -4,6 +4,7 @@ import by.veremei.ui.page.components.CheckServiceFeeAndTotalCostComponent;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import java.util.NoSuchElementException;
 import java.util.Random;
 
 import static com.codeborne.selenide.Condition.empty;
@@ -17,13 +18,19 @@ public class EventPage {
     private final SelenideElement divAgeLimit = $(".sign_age"),
                                   divWithTicketCostText = $(".data-activity .pull-right");
     public void openRandomEvent() {
+        if (linkOpenEventDetails.isEmpty()) {
+            throw new NoSuchElementException("No events found on the page");
+        }
         Random random = new Random();
         int randomIndex = random.nextInt(linkOpenEventDetails.size());
         linkOpenEventDetails.get(randomIndex).click();
     }
 
     public void openLastEvent() {
-        linkOpenEventDetails.last().click();
+        if (linkOpenEventDetails.isEmpty()) {
+            throw new NoSuchElementException("No events found on the page");
+        }
+        linkOpenEventDetails.last().shouldBe(visible).click();
     }
 
     public void checkAgeLimitIcon() {
