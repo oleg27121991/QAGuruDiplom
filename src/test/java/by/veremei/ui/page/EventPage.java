@@ -23,7 +23,7 @@ public class EventPage {
         }
         Random random = new Random();
         int randomIndex = random.nextInt(linkOpenEventDetails.size());
-        linkOpenEventDetails.get(randomIndex).click();
+        linkOpenEventDetails.get(randomIndex).shouldBe(visible).click();
     }
 
     public void openLastEvent() {

@@ -29,7 +29,7 @@ public class CheckServiceFeeAndTotalCostComponent {
         double roundedCost = Math.round(totalCost * 20.0) / 20.0;
         DecimalFormat decimalFormat = new DecimalFormat("#,###.00");
         String formattedCost = decimalFormat.format(roundedCost);
-        formattedCost = formattedCost.replace(",", " ").replace(".", ",").replace(" ", ".");
+        formattedCost = formattedCost.replace(",", " ").replace(" ", ".");
 
         divWithOrderInfo.shouldHave(text(formattedCost))
                 .shouldHave(text(String.valueOf(ticketCount)));
