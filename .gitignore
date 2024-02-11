@@ -38,6 +38,3 @@ target/
 /gradlew
 /gradlew.bat
 .todo
-
-## Auth config
-config.properties
