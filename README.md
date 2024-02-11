@@ -1,6 +1,6 @@
 # Проект по автоматизации тестирования для сайта  [BezKassira.by](https://bezkassira.by/)
 
-<img alt="main page" src="/media/screenshots/mainPage.png">
+<img alt="main page" src="media/screenshots/mainPage.png">
 
 ##  Содержание:
 
