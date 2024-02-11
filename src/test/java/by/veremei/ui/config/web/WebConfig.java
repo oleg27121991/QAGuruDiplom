@@ -5,8 +5,8 @@ import org.aeonbits.owner.Config;
 import java.net.URL;
 
 @Config.Sources({
-        "classpath:config/config.properties",
-        "classpath:config/${env}.properties"
+        "classpath:config/${env}.properties",
+        "classpath:config/config.properties"
 })
 public interface WebConfig extends Config {
     @Key("baseUrl")
