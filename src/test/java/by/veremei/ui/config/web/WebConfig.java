@@ -5,7 +5,6 @@ import org.aeonbits.owner.Config;
 import java.net.URL;
 
 @Config.Sources({
-        "classpath:config/config.properties",
         "classpath:config/${env}.properties"
 })
 public interface WebConfig extends Config {
@@ -32,10 +31,4 @@ public interface WebConfig extends Config {
     @Key("remoteUrl")
     @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     URL remoteUrl();
-
-    @Key("buyerName")
-    String buyerName();
-
-    @Key("buyerPass")
-    String buyerPass();
 }
