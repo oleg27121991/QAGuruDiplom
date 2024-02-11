@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'io.freefair.lombok' version '6.0.0-m2'
+    id('org.gradle.test-retry') version '1.5.8'
     id('io.qameta.allure') version '2.11.2'
 }
 
@@ -63,6 +63,11 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+    retry {
+        maxRetries = 2
+        maxFailures = 20
+        failOnPassedAfterRetry = true
     }
 }
 
