@@ -153,7 +153,7 @@ ____
 После завершения сборки, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов в специально настроенный чат.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screenshots/telegramBot.png">
+<img width="70%" title="Telegram Notifications" src="media/screenshots/telegram.png">
 </p>
 
 ____
@@ -162,5 +162,5 @@ ____
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
-  <img title="Selenoid Video" src="media/screenshots/testVideo.gif">
+  <img title="Selenoid Video" src="media/screenshots/test.gif">
 </p>
