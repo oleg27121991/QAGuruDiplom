@@ -4,10 +4,7 @@ import by.veremei.api.authorization.UserAuthorizationAPI;
 import by.veremei.ui.data.TestDataAuthorization;
 import by.veremei.ui.page.EventPage;
 import by.veremei.ui.page.MainPage;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -18,6 +15,7 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Билеты на мероприятие")
+@Feature("Билеты на мероприятие")
 @Tag("TICKETS")
 public class BuyTicketTest extends TestBase {
     UserAuthorizationAPI userAuthAPI = new UserAuthorizationAPI();
@@ -28,7 +26,7 @@ public class BuyTicketTest extends TestBase {
     private final static String NAME_EVENT_CATEGORIES = "Концерты";
 
     @Test
-    @Feature("Покупка билетов")
+    @Story("Цены билетов")
     @Owner("tg - @Veremeioleg")
     @Severity(SeverityLevel.NORMAL)
     @Tag("TICKETS")

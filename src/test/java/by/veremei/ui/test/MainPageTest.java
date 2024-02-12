@@ -17,6 +17,7 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Главная страница")
+@Feature("Главная страница")
 @Tag("MAIN")
 public class MainPageTest extends TestBase {
     MainPage mainPage = new MainPage();
@@ -24,7 +25,7 @@ public class MainPageTest extends TestBase {
     private final static String TITLE_IN_BUYER_LOGIN_FORM = "Вход для покупателя";
 
     @Test
-    @Feature("Главная страница")
+    @Story("Информация на главной странице")
     @Owner("tg - @Veremeioleg")
     @Severity(SeverityLevel.BLOCKER)
     @Tag("MAIN")
@@ -59,7 +60,7 @@ public class MainPageTest extends TestBase {
 
     @ParameterizedTest
     @MethodSource
-    @Feature("Главная страница")
+    @Story("Информация на главной странице")
     @Owner("tg - @Veremeioleg")
     @Severity(SeverityLevel.BLOCKER)
     @Tag("MAIN")

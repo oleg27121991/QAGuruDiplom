@@ -2,10 +2,7 @@ package by.veremei.ui.test;
 
 import by.veremei.ui.page.EventPage;
 import by.veremei.ui.page.MainPage;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,6 +11,7 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Мероприятие")
+@Feature("Мероприятия")
 @Tag("EVENTS")
 public class EventsTest extends TestBase {
     MainPage mainPage = new MainPage();
@@ -21,7 +19,7 @@ public class EventsTest extends TestBase {
     private static final String NAME_EVENT_CATEGORIES = "Концерты";
 
     @Test
-    @Feature("Мероприятия")
+    @Story("Информация на странице мероприятия")
     @Owner("tg - @Veremeioleg")
     @Severity(SeverityLevel.MINOR)
     @Tag("EVENTS")
@@ -42,7 +40,7 @@ public class EventsTest extends TestBase {
     }
 
     @Test
-    @Feature("Мероприятия")
+    @Story("Информация на странице мероприятия")
     @Owner("tg - @Veremeioleg")
     @Severity(SeverityLevel.MINOR)
     @Tag("EVENTS")
